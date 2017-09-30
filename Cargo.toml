@@ -1,0 +1,19 @@
+[package]
+authors = ["Taryn Hill <taryn@phrohdoh.com>"]
+name = "pokeapi"
+version = "0.0.1"
+
+[[bin]]
+name = "main"
+required-features = ["clap"]
+
+[dependencies]
+error-chain = "0.11"
+reqwest = "0.7"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+
+[dependencies.clap]
+optional = true
+version = "2.26"
